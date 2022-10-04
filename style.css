@@ -9,7 +9,7 @@ body {
 }
 .wrapper {
   width: 90%;
-  font-size: 16px
+  font-size: 16px;
   max-width: 43.75em;
   margin: 1em auto;
 }
