@@ -1,5 +1,7 @@
-const totalAmount = document.getElementById("total-amount");
-const userAmount = document.getElementById("user-amount");
+"use strict";
+
+let totalAmount = document.getElementById("total-amount");
+let userAmount = document.getElementById("user-amount");
 const checkAmountButton = document.getElementById("check-amount");
 const totalAmountButton = document.getElementById("total-amount-button");
 const productTitle = document.getElementById("product-title");
@@ -13,7 +15,6 @@ const list = document.getElementById("list");
 let tempAmount = 0;
 
 //Set Budget Part
-
 totalAmountButton.addEventListener("click", () => {
   tempAmount = totalAmount.value;
   //empty or negative input
@@ -31,7 +32,6 @@ totalAmountButton.addEventListener("click", () => {
 });
 
 //Function To Disable Edit and Delete Button
-
 const disableButtons = (bool) => {
   let editButtons = document.getElementsByClassName("edit");
   Array.from(editButtons).forEach((element) => {
@@ -58,7 +58,6 @@ const modifyElement = (element, edit = false) => {
 };
 
 //Function To Create List
-
 const listCreator = (expenseName, expenseValue) => {
   let sublistContent = document.createElement("div");
   sublistContent.classList.add("sublist-content", "flex-space");
@@ -82,7 +81,6 @@ const listCreator = (expenseName, expenseValue) => {
 };
 
 //Function To Add Expenses
-
 checkAmountButton.addEventListener("click", () => {
   //empty checks
   if (!userAmount.value || !productTitle.value) {
