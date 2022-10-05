@@ -99,6 +99,6 @@ checkAmountButton.addEventListener("click", () => {
   balanceValue.innerText = totalBalance;
   //Create list
   listCreator(productTitle.value, userAmount.value);
-  //Emptying inputs
+  //Emptying the inputs values
   productTitle.value = userAmount.value = "";
 });
