@@ -1,6 +1,6 @@
 # Budget-App
 ## About The App
- This is a mini budget app designed using html, css and javascript
+ This is an intuitive budget app designed using html, css and javascript
  ## App Features
  The App has mainly four sections:
  * The budget section: where a users can set their budget amount
